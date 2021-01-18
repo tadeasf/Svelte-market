@@ -1,0 +1,136 @@
+body {
+	margin: 0;
+	font-family: Roboto, -apple-system, BlinkMacSystemFont, Segoe UI, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+	font-size: 14px;
+	line-height: 1.5;
+	color: #000;
+	--primary-color: #00e676;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	margin: 0 0 0.5em 0;
+	font-weight: 400;
+	line-height: 1.2;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+a {
+	color: inherit;
+}
+
+code {
+	font-family: menlo, inconsolata, monospace;
+	font-size: calc(1em - 2px);
+	color: #555;
+	background-color: #f0f0f0;
+	padding: 0.2em 0.4em;
+	border-radius: 2px;
+}
+
+@media (min-width: 625px) {
+	body {
+		font-size: 16px;
+	}
+}
+
+::-webkit-scrollbar {
+	width: 0.3em;
+}
+
+	/* Track */
+::-webkit-scrollbar-track {
+	background: #f1f1f1;
+}
+
+	/* Handle */
+::-webkit-scrollbar-thumb {
+	background: var(--primary-color);
+}
+
+@-webkit-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; } 
+}
+@-moz-keyframes fadeIn {
+	0% { opacity: 0;}
+	100% { opacity: 1; }
+}
+@-o-keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+@keyframes fadeIn {
+	0% { opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@-webkit-keyframes pressed {
+	0% { transform: scaleX(1) scaleY(1); }
+	50% { transform: scaleX(0.95) scaleY(0.95); }
+	100% { transform: scaleX(1) scaleY(1); }
+}
+@-moz-keyframes pressed {
+	0% { transform: scaleX(1) scaleY(1); }
+	50% { transform: scaleX(0.95) scaleY(0.95); }
+	100% { transform: scaleX(1) scaleY(1); }
+}
+@-o-keyframes pressed {
+	0% { transform: scaleX(1) scaleY(1); }
+	50% { transform: scaleX(0.95) scaleY(0.95); }
+	100% { transform: scaleX(1) scaleY(1); }
+}
+@keyframes pressed {
+	0% { transform: scaleX(1) scaleY(1); }
+	50% { transform: scaleX(0.95) scaleY(0.95); }
+	100% { transform: scaleX(1) scaleY(1); }
+}
+
+.fadeIn {
+	-webkit-animation: fadeIn 0.5s ease-in-out;
+	-moz-animation: fadeIn 0.5s ease-in-out;
+	-o-animation: fadeIn 0.5s ease-in-out;
+	animation: fadeIn 0.5s ease-in-out;
+}
+
+.pressed:focus {
+	background-color: #00e366;
+	-webkit-animation: pressed 0.5s ease-in-out;
+	-moz-animation: pressed 0.5s ease-in-out;
+	-o-animation: pressed 0.5s ease-in-out;
+	animation: pressed 0.5s ease-in-out; 
+}
+
+@-webkit-keyframes wave {
+	0% { background-size: 1100px; background-position-x: -50%; }
+	50% { background-size: 1600px; }
+	100% { background-size: 1200px; background-position-x: 0%; }
+}
+@-moz-keyframes wave {
+	0% { background-size: 1100px; background-position-x: -50%; }
+	50% { background-size: 1600px; }
+	100% { background-size: 1200px; background-position-x: 0%; }
+}
+@-o-keyframes wave {
+	0% { background-size: 1100px; background-position-x: -50%; }
+	50% { background-size: 1600px; }
+	100% { background-size: 1200px; background-position-x: 0%; }
+}
+@keyframes wave {
+	0% { background-size: 1100px; background-position-x: -50%; }
+	50% { background-size: 1600px; }
+	100% { background-size: 1200px; background-position-x: 0%; }
+}
+
+.backgroundImage {
+	background-image: url("/px.png");
+	background-position: 0% 80%;
+	background-repeat: no-repeat;
+	background-size: 1200px;
+	-webkit-animation: wave 1.5s ease-in-out;
+	-moz-animation: wave 1.5s ease-in-out;
+	-o-animation: wave 1.5s ease-in-out;
+	animation: wave 1.5s ease-in-out;
+}

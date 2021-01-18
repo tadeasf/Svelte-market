@@ -1,0 +1,25 @@
+{
+  "name": "poc-dinamica-produtos-api",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint ./src",
+    "lint:fix": "eslint ./src --fix",
+    "format": "prettier --write ./src"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^4.3.0",
+    "@typescript-eslint/parser": "^4.3.0",
+    "eslint": "^7.10.0",
+    "prettier": "^2.1.2",
+    "typescript": "^4.0.3",
+    "@types/cors": "^2.8.7"
+  },
+  "dependencies": {
+    "cors": "^2.8.5"
+  }
+}
